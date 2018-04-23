@@ -59,7 +59,6 @@ export * from './layer';
 export * from './data';
 export * from './navigation';
 // export * from './forms/dynamic-form';
-export * from './forms/validators';
 export * from './messages';
 export * from './forms/ueditor';
 export * from './forms/fileupload';

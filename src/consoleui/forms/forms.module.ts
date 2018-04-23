@@ -12,14 +12,12 @@ import { RadioComponent } from './radio/radio.component';
 import { TreeSelectComponent } from './tree-select/tree-select.component';
 import { WizardComponent } from './wizard/wizard.component';
 import { WizardStepComponent } from './wizard/wizard-step/wizard-step.component';
-import { ValidatorsModule } from './validators/validators.module';
 import { CuiTreeModule } from '../data/tree/tree.module';
 
 @NgModule({
   imports: [
     CommonModule,
     CuiTemplateModule,
-    ValidatorsModule,
     CuiCoreModule,
     CuiTreeModule
   ],
@@ -29,7 +27,6 @@ import { CuiTreeModule } from '../data/tree/tree.module';
   exports: [
     SelectComponent, CalendarComponent, ChipsComponent, InputSwitchComponent,
     RadioComponent, TreeSelectComponent,
-    ValidatorsModule,
     WizardComponent,
     WizardStepComponent]
 })

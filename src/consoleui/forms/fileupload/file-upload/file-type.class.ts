@@ -54,7 +54,7 @@ export class FileType {
   ];
 
   public static getMimeClass(file: any): string {
-    return this.getMimeClassByType(file.type, file.name);
+    return FileType.getMimeClassByType(file.type, file.name);
   }
 
   public static getMimeClassByType(type: string, name?: string): string {
