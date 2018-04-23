@@ -38,10 +38,10 @@
       </td>
       <td *ngFor="let col of columnsVisible" [ngStyle]="col.style" [ngClass]="col.styleClass">
         <div *ngIf="!!col.data && !colTpls[col.tpl]">{{row | objectPath: col.data}}</div>
-        <ng-container *ngIf="!!colTpls[col.tpl]" [ngTemplateOutlet]="colTpls[col.tpl]" [ngOutletContext]="{row: row}"></ng-container>
+        <ng-container *ngIf="!!colTpls[col.tpl]" [ngTemplateOutlet]="colTpls[col.tpl]" [ngTemplateOutletContext]="{row: row}"></ng-container>
       </td>
       <td class="text-right tb-nowrap" *ngIf="!!rowActions">
-        <ng-container [ngTemplateOutlet]="rowActions" [ngOutletContext]="{row: row}"></ng-container>
+        <ng-container [ngTemplateOutlet]="rowActions" [ngTemplateOutletContext]="{row: row}"></ng-container>
       </td>
     </tr>
   </tbody>

@@ -13,7 +13,7 @@
         <span [class]="getIcon()" *ngIf="hasIcon()"></span>
         <span class="cui-treenode-label">{{node.label}}</span>
       </ng-container>
-      <ng-container *ngIf="tree.nodeTemplate" [ngTemplateOutlet]="tree.nodeTemplate" [ngOutletContext]="{$implicit: node, node: node, me: me}"></ng-container>
+      <ng-container *ngIf="tree.nodeTemplate" [ngTemplateOutlet]="tree.nodeTemplate" [ngTemplateOutletContext]="{$implicit: node, node: node, me: me}"></ng-container>
     </div>
     <div class="cui-treenode-children loading" *ngIf="node.hasChildren && node.expanded && node.loading">Loading</div>
     <div class="cui-treenode-children" style="display: none;" *ngIf="node.hasChildren && node.expanded && !node.loading" [style.display]="node.expanded ? 'block' : 'none'">

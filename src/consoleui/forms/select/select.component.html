@@ -33,7 +33,7 @@
                             'cui-dropdown-item-empty':!option.label||option.label.length === 0}" (click)="onItemClick($event, option)">
           <span *ngIf="!itemTemplate">{{option.label||'empty'}}</span>
           <!-- <ng-template [cuiTemplateWrapper]="itemTemplate" [item]="option" *ngIf="itemTemplate"></ng-template> -->
-          <ng-container *ngIf="itemTemplate" [ngTemplateOutlet]="itemTemplate" [ngOutletContext]="{item: item}"></ng-container>
+          <ng-container *ngIf="itemTemplate" [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{item: item}"></ng-container>
         </li>
       </ul>
     </div>
