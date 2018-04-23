@@ -4,7 +4,7 @@ export class ComplexValidators {
 
     /** A value of control can't match the given regular expression */
     static forbiddenValidator(nameRe: RegExp): ValidatorFn {
-        return (control: AbstractControl): { [key: string]: any } => {
+        return (control: AbstractControl): null | { [key: string]: any } => {
             const name = control.value;
             const no = nameRe.test(name);
             return no ? { 'forbidden': { name } } : null;
