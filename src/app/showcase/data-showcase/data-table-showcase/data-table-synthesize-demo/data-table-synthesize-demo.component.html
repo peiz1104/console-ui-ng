@@ -107,14 +107,14 @@
 
 <ng-template #simpleSearchBox>
     <form nz-form [formGroup]="_searchForm" (ngSubmit)="_submitForm($event, _searchForm.value)" [nzLayout]="'inline'" class="cui-data-table-form-box">
-        <div nz-row class="cui-data-table-form-body">
+        <div nz-form-item>
             <div nz-form-control>
                 <nz-input formControlName="name" [nzPlaceHolder]="'请输入年度计划名称'"> </nz-input>
             </div>
-            <div class='simple-search-bar-search-box'>
-                <button type="submit" nz-button [nzType]="'primary'" class='search-btn'><i class="fa fa-search"></i>查询</button>
-                <button type="button" class="btn btn-link" (click)="resetForm($event);tableHandle.isComplexSearch=true">高级查询</button>
-            </div>
+        </div>
+        <div nz-form-item>
+            <button type="submit" nz-button [nzType]="'primary'" class='search-btn'><i class="fa fa-search"></i>查询</button>
+            <button type="button" class="btn btn-link" (click)="resetForm($event);tableHandle.isComplexSearch=true">高级查询</button>
         </div>
     </form>
 </ng-template>

@@ -66,40 +66,4 @@
         padding-top: 5rem;
         color: theme-color("primary");
     }
-    .cui-pagination {
-        font-size: 12px;
-        .cui-pagination-btns {
-            height: 30px;
-            width: 60px;
-            font-size: 14px;
-            background: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 0 10px;
-            outline: none;
-            appearance: none;
-            -moz-appearance: none;
-            -webkit-appearance: none;
-        }
-        .gobox {
-            position: relative;
-            .gobtn {
-                position: absolute;
-                right: 8px;
-                line-height: 30px;
-                font-size: 14px;
-                &:hover {
-                    color: #108ee9;
-                }
-            }
-            .cursor {
-                cursor: pointer;
-            }
-        }
-    }
 }
-
-
-// .ant-input{
-//     height: 30px !important;
-// }
